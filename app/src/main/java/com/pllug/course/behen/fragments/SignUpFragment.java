@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.pllug.course.behen.MainActivity;
+import com.pllug.course.behen.ProfileFragmentActivity;
 import com.pllug.course.behen.R;
 
 
@@ -53,7 +54,7 @@ public class SignUpFragment extends Fragment {
         signInTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).showSignIn();
+                ((ProfileFragmentActivity) getActivity()).showSignIn();
             }
         });
     }
@@ -106,6 +107,6 @@ public class SignUpFragment extends Fragment {
 //            }
 //        }
 
-        ((MainActivity)getActivity()).signUp(login, email, password);
+        ((ProfileFragmentActivity)getActivity()).signUp(login, email, password);
     }
 }

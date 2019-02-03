@@ -3,6 +3,7 @@ package com.pllug.course.behen.fragments.signin;
 import android.text.TextUtils;
 
 import com.pllug.course.behen.MainActivity;
+import com.pllug.course.behen.ProfileFragmentActivity;
 
 public class SignInPresenter implements SignInContract.ISignInPresenter {
 
@@ -36,16 +37,16 @@ public class SignInPresenter implements SignInContract.ISignInPresenter {
             return;
         }
 
-        ((MainActivity) fragment.getActivity()).signIn(login, password);
+        ((ProfileFragmentActivity) fragment.getActivity()).signIn(login, password);
     }
 
     @Override
     public void showSignUp() {
-        ((MainActivity) fragment.getActivity()).showSignUp();
+        ((ProfileFragmentActivity) fragment.getActivity()).showSignUp();
     }
 
     @Override
     public void showForgotPassword() {
-        ((MainActivity) fragment.getActivity()).showForgotPassword();
+        ((ProfileFragmentActivity) fragment.getActivity()).showForgotPassword();
     }
 }

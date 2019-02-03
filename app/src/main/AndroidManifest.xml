@@ -24,6 +24,8 @@
 
         <activity android:name=".UserActivity"/>
 
+        <activity android:name="ProfileFragmentActivity"/>
+
     </application>
 
 </manifest>
