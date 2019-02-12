@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <!-- <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1.75"
@@ -90,5 +90,5 @@
             app:fontFamily="sans-serif-black"
             android:padding="10dp"/>
 
-    </LinearLayout>
+    </LinearLayout> -->
 </LinearLayout>

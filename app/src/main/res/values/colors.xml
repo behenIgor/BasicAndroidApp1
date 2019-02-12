@@ -4,12 +4,17 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="background_white">#eeffee</color>
     <color name="text_white">#ffffff</color>
-    <color name="background_yellow">#f7f4ad</color>
+    <color name="text_burgundy">#910108</color>
 
+    <color name="background_white">#eeffee</color>
+    <color name="background_yellow">#f7f4ad</color>
+    <color name="background_blue">#5075b2</color>
 
     <color name="background_si">#edebb1</color>
     <color name="background_fp">#edb989</color>
     <color name="background_su">#c7edad</color>
+
+
+
 </resources>

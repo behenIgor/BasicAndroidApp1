@@ -10,6 +10,7 @@ import android.widget.Toast;
 import com.pllug.course.behen.fragments.ForgotPasswordFragment;
 import com.pllug.course.behen.fragments.SignUpFragment;
 import com.pllug.course.behen.fragments.signin.SignInFragment;
+import com.pllug.course.behen.repositorys.albums_repository.MainActivityAlbums;
 
 public class ProfileFragmentActivity extends AppCompatActivity {
 
@@ -47,12 +48,15 @@ public class ProfileFragmentActivity extends AppCompatActivity {
 
 
     public void connectToAuthServer() {
-        Toast.makeText(this, "Connect to Auth server!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Connect to Auth server!", Toast.LENGTH_SHORT).show();
     }
 
 
+
+
+
     public void signIn(String login, String password) {
-        Toast.makeText(this, "You are logged in!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "You are logged in!", Toast.LENGTH_SHORT).show();
         goToUserActivity();
     }
 
