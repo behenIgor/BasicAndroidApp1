@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//----------??????перехід на MainActivityAlbums
+      //  goToMainActivityAlbums();
+//----------??????
 
 //  -------------  Перехід до ProfileActivityFragment  ---------------------------------------------
         goToProfileFragmentActivity();
@@ -74,8 +77,15 @@ public class MainActivity extends AppCompatActivity
     }
 //  ------------------------------------------------------------------------------------------------
 
+//-----------  ?????????? перехід на MainActivityAlbums
+//    private void goToMainActivityAlbums() {
+//        Intent intent = new Intent(MainActivity.this, com.pllug.course.behen.repositorys.albums_repository.MainActivityAlbums.class);
+//        startActivity(intent);
+//}
+//----------------??????????
 
-//  -------------  Navigation Drawer  --------------------------------------------------------------
+
+    //  -------------  Navigation Drawer  --------------------------------------------------------------
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -119,7 +129,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            Intent intent = new Intent(MainActivity.this, MainActivityAlbums.class);
+            Intent intent = new Intent(MainActivity.this, com.pllug.course.behen.repositorys.albums_repository.MainActivityAlbums.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
             Toast.makeText(getApplicationContext(), "Ви вибрали Gallery", Toast.LENGTH_SHORT).show();

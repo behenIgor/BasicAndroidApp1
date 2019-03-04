@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import com.pllug.course.behen.fragments.SignUpFragment;
 import com.pllug.course.behen.repositorys.albums_repository.AlbumsFragment;
+import com.pllug.course.behen.repositorys.albums_repository.MainActivityAlbums;
 
 import java.io.File;
 
@@ -74,14 +75,19 @@ public class UserActivity extends AppCompatActivity  implements View.OnClickList
             case R.id.action_share_iv:
                 shareContact();
                 break;
-
+//-------------------------перйти на MainActivityAlbums ??????????????????
             case R.id.toApi:
 Toast.makeText(this, "User Activity", Toast.LENGTH_LONG).show();
+            goToMainActivityAlbums();
                 break;
 
         }
     }
-
+    private void goToMainActivityAlbums() {
+        Intent intent = new Intent(UserActivity.this, MainActivityAlbums.class);
+        startActivity(intent);
+//-------------------------------------------------
+    }
 
 
 

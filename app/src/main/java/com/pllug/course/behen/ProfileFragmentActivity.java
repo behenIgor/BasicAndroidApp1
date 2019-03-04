@@ -53,8 +53,6 @@ public class ProfileFragmentActivity extends AppCompatActivity {
 
 
 
-
-
     public void signIn(String login, String password) {
         //Toast.makeText(this, "You are logged in!", Toast.LENGTH_SHORT).show();
         goToUserActivity();
@@ -70,13 +68,10 @@ public class ProfileFragmentActivity extends AppCompatActivity {
         Toast.makeText(this, "You will receive recover code!", Toast.LENGTH_SHORT).show();
     }
 
-
     private void goToUserActivity() {
         Intent intent = new Intent(ProfileFragmentActivity.this, UserActivity.class);
         startActivity(intent);
     }
-
-
 
 
     public void replaceFragment(Fragment fragment, int containerId) {
